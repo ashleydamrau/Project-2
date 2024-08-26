@@ -1,0 +1,97 @@
+/*Header and Navigation*/
+* {
+  font-family: "Varela Round", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 45px;
+  padding-left: 30px;
+}
+
+header {
+  background-color: rgb(252, 85, 55);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav > ul > li {
+  list-style-type: none;
+  display: inline-block;
+  padding-right: 20px;
+  font-size: 25px;
+}
+
+/*Search Container*/
+#search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+#search-box {
+  width: 250px;
+  height: 30px;
+  font-size: 25px;
+  padding: 5px;
+  border: .5px solid grey;
+}
+
+#search-container button {
+  background-color: rgb(252, 85, 55);
+  color: white;
+  width: 95px;
+  height: 40px;
+  font-size: 25px;
+  border: none;
+  border-radius: 7px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/*Pagination*/
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination button {
+  margin-left: 5px;
+  background-color:rgb(252, 85, 55);
+  color: white;
+  border: none;
+  height: 45px;
+  width: 85px;
+  font-size: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.pagination button:disabled {
+  background-color: lightgrey;
+  cursor: not-allowed;
+}
+
+#gif-results {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.goHome:hover, .goRandom:hover {
+  text-decoration: bold;
+  cursor: pointer;
+  background-color:rgb(252, 43, 6);
+  border-radius: 10px;
+}
+

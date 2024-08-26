@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project 2</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1>Giphy Search Engine</h1>
+    <nav>
+      <ul>
+        <li><a class="goHome" onclick="goHome()">Home</a></li>
+        <li><a class="goRandom" onclick="goRandom()">Random</a></li>
+      </ul>
+    </nav>
+  </header>
+
+ 
+
+  <div id="search-container">
+    <input type="text" id="search-box" placeholder="Search here..." />
+    <button onclick="searchGiph(1)">Search</button>
+  </div>
+
+ 
+
+  <div class="pagination">
+    <button id="previousPage" onclick="previousPage()" disabled>Previous</button>
+    <button id="nextPage" onclick="nextPage()">Next</button>
+  </div>
+
+  <div id="gif-results"></div>
+
+<script src="main.js"></script>
+
+</body>
+
+</html>
