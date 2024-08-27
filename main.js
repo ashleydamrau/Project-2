@@ -1,5 +1,5 @@
 let currentPage = 1;
-const apiKey = 'm7U02wuVZ0NYHqjQ6Y4IYiBj8L6IuWMb';
+const apiKey = 'XYRdJl4dSlkwQlwVtUieNnkB5EZY3JQS';
 let searchQuery = '';
 
 function searchGiph(page = 1) {
@@ -54,7 +54,13 @@ function goHome() {
 }
 
 function goRandom() {
-    const randomIndex = Math.floor(Math.random() * searchQuery.length);
-    document.getElementById('search-box').value = searchQuery[randomIndex];
-    searchGiph();
+    const numberOfTimes = 5; // Number of times you want to trigger random GIFs
+
+    for (let i = 0; i < numberOfTimes; i++) {
+        setTimeout(() => {
+            const randomIndex = Math.floor(Math.random() * searchQuery.length);
+            document.getElementById('search-box').value = searchQuery[randomIndex];
+            searchGiph(); 
+        }, i * 500); 
+    }
 }

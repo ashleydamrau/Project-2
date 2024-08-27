@@ -95,3 +95,22 @@ nav > ul > li {
   border-radius: 10px;
 }
 
+@media (max-width: 500px) {
+  #gif-results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #search-box {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #search-container button {
+    width: 60px;
+    height: 45px;
+    font-size: 10px;
+  }
+
+}
